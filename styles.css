@@ -596,3 +596,36 @@ section {
         top: 60px;
     }
 }
+/* ============================================
+   FIX RESPONSIVE LOGO + TEXTO
+   ============================================ */
+
+/* Logo adaptable */
+.hero-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Evitar que el texto se corte */
+.hero-title,
+.hero-subtitle,
+.hero-description {
+  word-wrap: break-word;
+}
+
+/* Ajustes específicos para celular */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .hero-logo {
+    max-width: 250px;
+  }
+}
